@@ -1,0 +1,66 @@
+.day-container {
+    position: relative;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 4px;
+    min-height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: background-color 0.3s ease, border 0.3s ease;
+  }
+  
+  .day-container.current-month {
+    font-weight: normal;
+  }
+  
+  .day-container.outside-month {
+    color: #ccc;
+  }
+  
+  .day-container.current-day {
+    background-color: #f8e7ef; /* Yellow background for current day */
+    border: 2px solid #052b67; /* Orange border to highlight current day */
+    box-shadow: 0px 0px 10px rgba(255, 165, 0, 0.6); /* Optional: add a glow effect */
+  }
+  
+  .day-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .add-event-button {
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .add-event-button:hover {
+    background: #0056b3;
+  }
+  
+  .events-list {
+    margin-top: 5px;
+    max-height: 50px;
+    overflow-y: auto;
+  }
+  
+  .event-item {
+    background: #f0f0f0;
+    margin: 2px 0;
+    padding: 4px;
+    border-radius: 4px;
+    font-size: 12px;
+    color: #333;
+    text-align: left;
+  }
+  
